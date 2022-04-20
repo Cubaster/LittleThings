@@ -6,6 +6,10 @@
 - Operation is performed only on two parameters. 
 - User can type/paste space-seperated prefix or postfix notation. 
 
+Examples:
+ - postfix: 1 2 + 5 *
+ - prefix: / 5 + 3 7
+
 #### Description
 
 It is basic program containing single class CalculatorRPN. \
