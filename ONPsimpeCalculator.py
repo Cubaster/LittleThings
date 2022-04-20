@@ -1,6 +1,6 @@
 class InlineCalculator:
     def __init__(self):
-        self.userInput = None
+        self.user_input = None
         self.stack = None
         self.operators = {"+": lambda x, y: x + y, "-": lambda x, y: x - y, "x": lambda x, y: x * y,
                           "*": lambda x, y: x * y, "/": lambda x, y: x / y, "^": lambda x, y: x ** y}
@@ -11,8 +11,8 @@ class InlineCalculator:
 
     def __putOnStack(self):
         print("Your formula:")
-        self.userInput = input()
-        self.stack = self.userInput.split(" ")
+        self.user_input = input()
+        self.stack = self.user_input.split(" ")
         if self.stack[-1] in self.operators.keys():
             self.postfix = self.stack[:]
             self.prefix = self.stack[::-1]
@@ -55,7 +55,7 @@ class InlineCalculator:
         self.postfix = None
         self.result = None
         self.stack = None
-        self.userInput = None
+        self.user_input = None
 
     def calculate(self):
         while True:
