@@ -9,7 +9,7 @@
 #### Description
 
 It is basic program containing single class CalculatorRPN. \
-Class store user input. perform operations and display both notations and result. \
+Class store user input. perform operations and display both notations and result. 
 
 #### Methods and functions
 
