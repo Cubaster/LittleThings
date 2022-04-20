@@ -13,11 +13,11 @@ class InlineCalculator:
         print("Your formula:")
         self.user_input = input()
         self.stack = self.user_input.split(" ")
-        if self.stack[-1] in self.operators.keys():
+        if self.stack[-1] in self.operators:
             self.postfix = self.stack[:]
             self.prefix = self.stack[::-1]
             self.run = 1
-        elif self.stack[0] in self.operators.keys():
+        elif self.stack[0] in self.operators:
             self.postfix = self.stack[::-1]
             self.prefix = self.stack[:]
             self.stack.reverse()
@@ -31,7 +31,7 @@ class InlineCalculator:
             value = self.stack.pop(0)
             if value.isdigit():
                 result.append(float(value))
-            elif value in self.operators.keys():
+            elif value in self.operators:
                 try:
                     result.append(self.operators[value](result.pop(-2), result.pop(-1)))
                 except:
@@ -55,7 +55,7 @@ class InlineCalculator:
         self.postfix = None
         self.result = None
         self.stack = None
-        self.user_input = None
+        self.user_input = Nones
 
     def calculate(self):
         while True:
