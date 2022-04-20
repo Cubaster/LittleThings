@@ -5,10 +5,11 @@
 #### Assumptions:
 - Operation is performed only on two parameters. 
 - User can type/paste space-seperated prefix or postfix notation. 
+- Available operators: +, -, *, /, ^
 
 Examples:
- - postfix: 1 2 + 5 *
- - prefix: / 5 + 3 7
+ 1. postfix: 1 2 + 5 *
+ 2. prefix: / 5 + 3 7
 
 #### Description
 
